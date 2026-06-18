@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengo una pregunta...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fondo-pregunta">
+
+    <div id="pantallaPregunta">
+        <h1>¿Quieres tener una cita conmigo?</h1>
+        <div class="botones">
+            <button id="btnSi">Sí</button>
+            <button id="btnNo">No</button>
+        </div>
+    </div>
+
+    <div id="pantallaPlanes" class="oculto">
+        <h1> 💖🥰 Elige un plan 🥰💖</h1>
+        <div class="contenedor-planes">
+            <button class="btn-plan" data-id="1">Plan 1: Cena</button>
+            <button class="btn-plan" data-id="2">Plan 2: Paseito</button>
+            <button class="btn-plan" data-id="3">Plan 3: Ludosport</button>
+            <button class="btn-plan" data-id="4">Plan 4: Museo</button>
+            <button class="btn-plan" data-id="5">Plan 5: Viajecito</button>
+            <button class="btn-plan" data-id="6">Plan 6: Salir con amigos</button>
+        </div>
+    </div>
+
+    <div id="pantallaDetalles" class="oculto">
+        <h1>¡Planazo reservado! ¡Bieeen! 🎉</h1>
+        <div class="tarjeta-info">
+            <p>📍 <strong>Lugar:</strong> <span id="sitioPlan"></span></p>
+            <p>⏰ <strong>Hora:</strong> <span id="horaPlan"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

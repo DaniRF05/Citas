@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    overflow: hidden;
+
+    /* Aquí pones el color de fondo por si la imagen tarda en cargar */
+    background-color: #fdf2f8; 
+    
+    /* Aquí pegas el enlace DIRECTO de Pinterest entre las comillas */
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: #f8f9fa;
+}
+
+.central-container {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    padding: 40px;                 /* Relleno interior para el contenido */
+    border-radius: 20px;           /* Bordes redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    max-width: 500px;              /* Ancho máximo para que no se extienda demasiado */
+    width: 80%;                    /* Se adapta a pantallas más pequeñas */
+}
+
+h1 {
+    color: white; 
+    /* Esto crea un contorno negro sólido y una pequeña sombra */
+    text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0px  5px 15px rgba(0,0,0,0.8);
+    padding: 0 20px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #db2777;
+}
+
+#btnNo {
+    position: relative;
+}
+
+/* Estilos específicos para los 6 botones de planes */
+.contenedor-planes {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.btn-plan {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f472b6;
+}
+
+/* Tarjeta donde se muestra el sitio y la hora */
+.tarjeta-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 150px;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    color: #4a044e;
+}
+
+#pantallaDetalles h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Clase para ocultar las pantallas */
+.oculto {
+    display: none !important;
+}
+
+/* Añade esto al final de tu CSS */
+.fondo-pregunta {
+    background-image: url('https://i.pinimg.com/564x/40/12/90/401290b0368db5c1559e00f3579c1372.jpg');
+}
+
+.fondo-planes {
+    /* Metes los 4 enlaces separados por comas */
+    background-image: 
+        url('https://i.etsystatic.com/58437764/r/il/e6c250/6850007471/il_570xN.6850007471_o1md.jpg'), 
+        url('gatos_scape.png'), 
+        url('https://i.pinimg.com/736x/53/f1/86/53f186f027e0b3191f147d2c00300754.jpg'), 
+        url('https://www.shutterstock.com/image-photo/hungry-cat-steals-fish-cutting-260nw-2415920907.jpg');
+    
+    /* Dónde va cada una */
+    background-position: 
+        top left,      /* Arriba a la izquierda */
+        top right,     /* Arriba a la derecha */
+        bottom left,   /* Abajo a la izquierda */
+        bottom right;  /* Abajo a la derecha */
+    
+    /* Le decimos que cada foto ocupe exactamente la mitad (50%) del ancho y del alto */
+    background-size: 
+        50% 50%, 
+        50% 50%, 
+        50% 50%, 
+        50% 50%;
+        
+    background-repeat: no-repeat;
+}
+
+.fondo-detalles {
+    background-image: url('https://www.patasencasa.com/sites/default/files/styles/article_detail_1200/public/2024-10/gatos%20enamorados_0.jpg.webp?itok=I1e5fCz8');
+}
