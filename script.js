@@ -2,9 +2,9 @@
 // CONFIGURACIÓN: Cambia esto para cada cita
 // ==========================================
 const CONFIG = {
-    planValido: 5,  // El número del botón correcto (del 1 al 6)
-    sitio: "París",
-    hora: "El viernes por la mañana"
+    planValido: 1,  // El número del botón correcto (del 1 al 6)
+    sitio: "La Chalana",
+    hora: "El viernes por la noche"
 };
 
 // Elementos de la web
